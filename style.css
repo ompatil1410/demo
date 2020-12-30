@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#background{
+    background: url('intro-bg.jpg');
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.nav-area{
+    /* background: white; */
+    height: 60px;
+    /* position: absolute; */
+    width: 100%;
+}
+.logo{
+    margin: 0 50px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logo span{
+    color: orange;
+    transition: 0.5s;
+
+}
+.logo span:hover{
+    color: white;
+}
+
+.menu-area{
+    float: right;
+    list-style: none;
+    margin: 20px;
+
+}
+.menu-area li{
+    display: inline-block;
+    margin: 0 5px;
+
+}
+.menu-area li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+.menu-area li.active a{
+    color: orange;
+}
+.menu-area li a:hover{
+    color: hotpink;
+}
+.banner-text{
+    position: absolute;
+    top: 37%;
+    text-align: center;
+    left: 28%;
+
+}
+.banner-text::after{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 200px;
+    transition: 0.4s;
+    background-color: white;
+    left: 34%;
+    margin-top: 15px;
+}
+.banner-text:hover::after{
+    background: hotpink;
+}
+.banner-text::before{
+    content: " ";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    transition: 0.4s;
+    background-color: white;
+    border-radius: 50%;
+    top: 62%;
+    left: 48%;
+    margin-top: 16px;
+}
+.banner-text:hover::before{
+    background: hotpink;
+}
+.banner-text h2{
+    color: white;
+    font-size: 100px;
+    margin: 0;
+    transition: 0.4s;
+}
+.banner-text h2 span{
+    color: orange;
+}
+.banner-text h2:hover{
+    /* color: skyblue; */
+}
+.banner-text p{
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    font-weight: 700;
+}
+.btn{
+    display: inline-block;
+    margin-top: 8%;
+    background: transparent;
+   
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 10px 25px;
+    outline: none;
+    transition: 0.6s;
+    color: orange;
+    border-radius: 9px;
+}
+.btn:hover{
+    color: white;
+    background: orange;
+    border: 2px solid orange;
+    /* font-weight: bold; */
+}
